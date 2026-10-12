@@ -4,7 +4,7 @@ const searchInput=document.getElementById('searchInput');
 let data=[], details=[], detailState='loading';
 const dialog=document.createElement('dialog');
 dialog.className='detail-dialog';
-dialog.innerHTML='<img class="dialog-cat" src="cat-girls-header.png" alt=""><p class="dialog-label">✧ 집사의 작은 기록 ✧</p><button class="detail-close" aria-label="닫기">×</button><h2 id="detailTitle"></h2><div id="detailBody"></div>';
+dialog.innerHTML='<img class="panel-girl" src="panel-girl.png" alt=""><span class="panel-bow" aria-hidden="true">୨୧</span><p class="dialog-label">✧ 집사의 작은 기록 ✧</p><button class="detail-close" aria-label="닫기">×</button><h2 id="detailTitle"></h2><div id="detailBody"></div><img class="panel-kitten" src="pink-cat.png" alt="">';
 document.getElementById('detailSlot').append(dialog);
 dialog.querySelector('button').onclick=()=>dialog.close();
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
