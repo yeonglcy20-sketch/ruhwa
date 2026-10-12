@@ -1,4 +1,4 @@
-const SHEET_ID='12sl4qtRuxadkUYeF7KIFEiBPxfnyotkAbh0zoiShvcQ';
+const SHEET_ID='1eqgJZBkKUEwbIIHHLS2rO4GJQPhu4xIYB1zRySGgkX0';
 const listEl=document.getElementById('list');
 const searchInput=document.getElementById('searchInput');
 let data=[], details=[], detailState='loading';
@@ -60,7 +60,7 @@ searchInput.addEventListener('input',render);
 setInterval(()=>{if(dialog.open&&detailState==='ready')showDetails();},60000);
 
 function setNicknameTitle(element,name){
- const icon=document.createElement('img');icon.src='cat_paw.svg';icon.alt='';icon.className='nickname-jelly';icon.setAttribute('aria-hidden','true');
+ const icon=document.createElement('img');icon.src='pink-cat.png';icon.alt='';icon.className='nickname-cat';icon.setAttribute('aria-hidden','true');
  const label=document.createElement('span');label.textContent=name;
  element.replaceChildren(icon,label);
 }
