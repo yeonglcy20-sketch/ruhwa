@@ -1,0 +1,89 @@
+*{box-sizing:border-box}html{color-scheme:light}body{margin:0;min-height:100vh;font-family:'Malgun Gothic','Segoe UI',sans-serif;color:#664956;background:radial-gradient(ellipse at 10% 0%,#ffe2ee 0,transparent 45%),linear-gradient(180deg,#fff6fa,#fffafb 65%)}.container{width:min(900px,100%);margin:0 auto;padding:38px 24px 28px}.hero{text-align:center;padding:0 0 27px}.brand-logo{display:block;width:min(350px,84%);height:auto;max-width:100%;margin:0 auto 14px;object-fit:contain;filter:drop-shadow(0 6px 12px #e77da424)}h1{font-size:25px;line-height:1.4;letter-spacing:-.8px;margin:0 0 8px;color:#a64c73}.hero p{font-size:13px;line-height:1.7;color:#b18b9b;margin:0}.search-wrap{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid #efcad9;border-radius:15px;padding:0 17px;box-shadow:0 5px 22px #cc71920a}.search-wrap:focus-within{border-color:#df82aa;box-shadow:0 0 0 3px #f6dbe8}.search-icon{font-size:29px;color:#cf83a2;line-height:1}#searchInput{width:100%;min-width:0;padding:16px 0;font:inherit;font-size:14px;color:#775469;border:0;outline:none;background:transparent}#searchInput::placeholder{color:#b49aa7}.card-list{margin-top:22px;display:flex;flex-direction:column;gap:13px}.item{padding:19px 22px;background:#fff;border:1px solid #f0d6e1;border-radius:17px;box-shadow:0 4px 16px #ac648608}.item-title{display:flex;align-items:center;gap:10px;font-size:18px;font-weight:700;color:#a14e73;line-height:1.5;margin-bottom:10px;overflow-wrap:anywhere}.cat-icon{width:27px;height:27px;flex-shrink:0;color:#da91b1}.item-row{font-size:14px;line-height:1.8;margin:3px 0;padding-left:37px;overflow-wrap:anywhere}.item-row b{color:#947080;font-weight:600}.empty{padding:35px 18px;text-align:center;font-size:14px;line-height:1.8;color:#a58494;border:1px dashed #edcbdc;background:#ffffff80;border-radius:17px}footer{text-align:center;font-size:10px;letter-spacing:1.5px;color:#c09eae;margin:34px 0 4px}@media(max-width:600px){.container{padding:26px 16px 24px}.brand-logo{width:min(290px,88%)}h1{font-size:22px}.hero{padding-bottom:23px}.hero p{font-size:12px}.item{padding:16px}.item-title{font-size:17px}.item-row{font-size:13px;padding-left:0}.search-wrap{padding-inline:13px}#searchInput{font-size:13px;padding-block:15px}}
+.container{max-width:1240px}.hero{padding-bottom:30px}.card-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;align-items:stretch}.item{cursor:pointer;min-height:170px;transition:border-color .18s,box-shadow .18s}.item:hover{border-color:#dfa2bd;box-shadow:0 6px 20px #bc719317}.item:focus-visible{outline:3px solid #df91b3;outline-offset:4px}.item-title,#detailTitle{display:flex;align-items:center;gap:9px}.item-title>span,#detailTitle>span{min-width:0;overflow-wrap:anywhere}.nickname-cat{width:28px;height:28px;object-fit:contain;flex-shrink:0}.item-row{padding-left:0}.detail-dialog{width:min(760px,calc(100% - 40px));max-height:85vh;overflow:auto;border:1px solid #ebc5d6;border-radius:21px;padding:28px;background:#fffafd;color:#715363;box-shadow:0 24px 90px #68445533}.detail-dialog::backdrop{background:#573d4c66;backdrop-filter:blur(4px)}.detail-dialog h2{margin:0 38px 23px 0;font-size:23px;color:#a34f75}.detail-close{position:absolute;right:13px;top:9px;width:36px;height:36px;border:0;border-radius:10px;background:transparent;font-size:30px;color:#b77294;cursor:pointer}.detail-close:hover{background:#ffe9f2}.detail-close:focus-visible{outline:2px solid #d985aa}.detail-table{width:100%;border-collapse:collapse;table-layout:fixed;text-align:left}.detail-table th,.detail-table td{padding:14px 8px;border-bottom:1px solid #f0dce5;overflow-wrap:anywhere;vertical-align:top;line-height:1.6}.detail-table th{color:#a56786;background:#fff0f6}.detail-table th:first-child{width:45%}.detail-table th:nth-child(2){width:12%}.due-badge{display:inline-block;border-radius:8px;padding:6px 9px;font-weight:700}.due-green{background:#dcfce7;color:#166534}.due-yellow{background:#fef3c7;color:#854d0e}.due-red{background:#fee2e2;color:#991b1b}.detail-table small{display:block;margin-top:6px;color:#a58395;font-size:12px}.detail-legend{font-size:12px;color:#a58395;line-height:1.8;margin-bottom:0}@media(max-width:1000px){.card-list{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:700px){.card-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.item{padding:17px 14px;min-height:140px}.item-title{font-size:17px}}@media(max-width:440px){.card-list{grid-template-columns:1fr}.item{min-height:0}.detail-dialog{width:calc(100% - 24px);padding:22px 12px}.detail-table th,.detail-table td{padding:10px 4px;font-size:13px}}@media(prefers-reduced-motion:reduce){.item{transition:none}}
+
+/* 넉넉한 목록과 카드 너비 */
+.container{width:min(1500px,100%);max-width:1500px;padding-inline:28px}
+.card-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.item{padding:24px;min-height:170px}
+.item-title{font-size:21px}
+.item-row{font-size:15px;line-height:1.8}
+@media(max-width:1100px){.card-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.container{padding-inline:18px}.card-list{grid-template-columns:1fr;gap:15px}.item{padding:20px;min-height:0}.item-title{font-size:19px}.item-row{font-size:14px}}
+
+/* 심플한 핑크 문구점 분위기 */
+:root{--pink:#c46e96;--line:#eedce5;--ink:#624c5b}
+body{color:var(--ink);background:radial-gradient(ellipse at 50% 0%,#fbe6ef 0%,transparent 48%),linear-gradient(180deg,#fff8fb 0%,#faf7f9 100%)}
+.container{padding-top:32px;padding-bottom:30px}
+.hero{position:relative;padding-bottom:30px}
+.brand-logo{position:relative;width:min(350px,84%);margin-bottom:12px;filter:drop-shadow(0 8px 16px #cb719217)}
+.hero-divider{display:flex;align-items:center;gap:14px;width:160px;margin:0 auto 15px;color:#d6a0b8;font-size:16px;line-height:1}
+.hero-divider::before,.hero-divider::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,transparent,#e7c7d6)}
+.hero-divider::after{transform:rotate(180deg)}
+h1{font-size:24px;font-weight:700;letter-spacing:-.7px;color:#89546f}
+.hero p{font-size:13px;color:#ac8f9e}
+.search-wrap{border:1px solid #e9d7e0;border-radius:16px;box-shadow:0 4px 16px #75445b04;background:#ffffffed}
+.search-icon{color:#c49aad}
+#searchInput{padding-block:18px;font-size:15px;color:#6e5362}
+#searchInput::placeholder{color:#b29da8}
+.search-wrap:focus-within{border-color:#d9a5bd;box-shadow:0 0 0 3px #efdce680}
+.list-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:32px 2px 15px;font-size:13px;font-weight:700;color:#91687e}
+.list-heading-note{font-size:11px;font-weight:400;color:#b9a0ad}
+.card-list{margin-top:0}
+.item{position:relative;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(135deg,#fff 70%,#fff9fc);box-shadow:0 3px 12px #86566d04}
+.item::before{content:'';position:absolute;left:24px;right:24px;top:0;height:2px;background:linear-gradient(90deg,#e8bfd2,transparent 75%)}
+.item-title{color:#9b5e7e;font-size:20px;padding-bottom:14px;margin-bottom:12px;border-bottom:1px solid #f4e9ef;gap:10px}
+.nickname-cat{width:29px;height:29px;opacity:.9}
+.item-row{color:#78616f;margin:6px 0;line-height:1.8}
+.item-row b{color:#a07c90;font-weight:500}
+.item:hover{border-color:#dbadc3;box-shadow:0 6px 20px #ad6d8b0b}
+.detail-dialog{border-color:#e7ccd9;border-radius:22px;background:#fffdfefe;box-shadow:0 24px 90px #68445530}
+.detail-dialog h2{padding-bottom:19px;border-bottom:1px solid #f0dfe8;color:#985d7b}
+.detail-table th{background:#fcf0f6;color:#a2738d;font-weight:600}
+.detail-table th,.detail-table td{border-bottom-color:#f1e5ec}
+.detail-close{background:#fff0f6;border-radius:50%;font-size:27px;color:#b8829d}
+.detail-close:hover{background:#f9e1ec}
+.detail-dialog::backdrop{background:#58424e66;backdrop-filter:blur(3px)}
+.detail-legend{padding-top:7px;color:#a68b9b}
+footer{margin-top:40px;padding-top:20px;border-top:1px solid #efe1e8;color:#b79daa;font-size:10px;letter-spacing:1.8px}
+@media(max-width:700px){.container{padding-top:25px}.hero{padding-bottom:25px}.hero h1{font-size:21px}.hero p{font-size:12px}.brand-logo{width:min(290px,88%)}#searchInput{font-size:13px;padding-block:16px}.list-heading{margin-top:25px;font-size:12px}.list-heading-note{font-size:10px}.item-title{font-size:19px}.item::before{left:20px;right:20px}.detail-dialog h2{font-size:21px}}
+
+/* 클릭을 막지 않는 은은한 벚꽃 배경 */
+body{isolation:isolate}.container{position:relative;z-index:1}
+.sakura-layer{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;user-select:none;contain:strict}
+.sakura-fall{position:absolute;left:var(--x);top:-30px;width:var(--size);height:var(--size);animation:sakura-fall var(--duration) linear infinite;animation-delay:var(--delay);pointer-events:none}
+.sakura-petal{display:block;width:100%;height:75%;border-radius:85% 12% 75% 30%;background:linear-gradient(135deg,#fff5fa 0%,#f3b5d0 55%,#e9a2c2 100%);box-shadow:inset 1px 1px 2px #fff9fc;opacity:.58;animation:sakura-sway var(--sway) ease-in-out infinite alternate;animation-delay:var(--delay);transform-origin:40% 60%}
+@keyframes sakura-fall{0%{transform:translate3d(0,-25px,0);opacity:0}6%{opacity:1}90%{opacity:1}100%{transform:translate3d(var(--drift),calc(100vh + 60px),0);opacity:0}}
+@keyframes sakura-sway{from{transform:translateX(-15px) rotate(var(--turn)) rotateY(0deg)}to{transform:translateX(15px) rotate(calc(var(--turn) + 150deg)) rotateY(60deg)}}
+@media(max-width:700px){.sakura-fall:nth-child(n+11){display:none}.sakura-petal{opacity:.45}}
+@media(prefers-reduced-motion:reduce){.sakura-layer{display:none}.sakura-fall,.sakura-petal{animation:none}}
+
+/* 한쪽 모서리의 고양이 귀와 은은한 핑크빛 */
+.item{overflow:visible;transition:border-color .22s ease,box-shadow .22s ease}
+.item::after{content:'';position:absolute;right:18px;top:-24px;width:42px;height:36px;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 36'%3E%3Cpath d='M3 34 10 5Q11 1 15 4L39 34' fill='%23fffafd' stroke='%23eedce5' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='m11 27 3-15 13 15Z' fill='%23f6dbe8'/%3E%3C/svg%3E") center/contain no-repeat;transition:filter .22s ease}
+.card-list{row-gap:32px}
+@media(hover:hover){.item:hover{border-color:#e6a8c5;box-shadow:0 0 0 1px #f6d7e7,0 0 17px #f2b5d14d,0 6px 18px #c88ca517}.item:hover::after{filter:drop-shadow(0 -2px 5px #f2b5d155)}}
+.item:focus-visible{border-color:#e6a8c5;box-shadow:0 0 17px #f2b5d14d}
+@media(max-width:700px){.card-list{row-gap:29px}.item::after{right:16px}}
+@media(prefers-reduced-motion:reduce){.item,.item::after{transition:none}}
+
+/* 발바닥 검색과 은은한 별빛 */
+.search-paw{display:block;width:25px;height:25px;flex-shrink:0;opacity:.9;pointer-events:none}
+.logo-wrap{position:relative;width:min(350px,84%);margin:0 auto 12px}
+.logo-wrap .brand-logo{width:100%;margin:0;height:auto}
+.logo-star{position:absolute;display:block;color:#d998b8;opacity:0;pointer-events:none;line-height:1;animation:logo-twinkle 7s ease-in-out infinite}
+.star-one{left:-3%;top:26%;font-size:20px;animation-delay:-1s}
+.star-two{right:1%;top:12%;font-size:13px;animation-delay:-3.3s}
+.star-three{right:-4%;bottom:18%;font-size:18px;animation-delay:-5.4s}
+@keyframes logo-twinkle{0%,68%,100%{opacity:0;transform:scale(.75)}78%{opacity:.7;transform:scale(1.08)}88%{opacity:.25;transform:scale(.95)}}
+@media(max-width:700px){.logo-wrap{width:min(290px,88%)}.search-paw{width:23px;height:23px}}
+@media(prefers-reduced-motion:reduce){.logo-star{animation:none;opacity:.3}}
+
+/* 양쪽의 작고 둥근 고양이 귀 */
+.item{overflow:visible}
+.item::before,.item::after{content:'';position:absolute;top:-29px;bottom:auto;width:48px;height:42px;background:url('cute-ear.svg') center/contain no-repeat;pointer-events:none;border:0;border-radius:0;box-shadow:none;transition:filter .22s ease;z-index:0}
+.item::before{left:18px;right:auto;transform:none}
+.item::after{right:18px;left:auto;transform:scaleX(-1)}
+.card-list{row-gap:40px}
+@media(hover:hover){.item:hover::before,.item:hover::after{filter:drop-shadow(0 -2px 5px #f2b5d155)}}
+@media(max-width:700px){.item::before{left:16px}.item::after{right:16px}.card-list{row-gap:36px}}
+@media(prefers-reduced-motion:reduce){.item::before,.item::after{transition:none}}
