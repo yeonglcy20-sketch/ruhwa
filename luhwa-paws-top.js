@@ -1,4 +1,4 @@
-const SHEET_ID='12sl4qtRuxadkUYeF7KIFEiBPxfnyotkAbh0zoiShvcQ';
+const SHEET_ID='1eqgJZBkKUEwbIIHHLS2rO4GJQPhu4xIYB1zRySGgkX0';
 const listEl=document.getElementById('list');
 const searchInput=document.getElementById('searchInput');
 let data=[], details=[], detailState='loading';
@@ -37,8 +37,8 @@ function render(){
  const card=document.createElement('div');card.className='item';card.tabIndex=0;card.setAttribute('role','button');card.setAttribute('aria-haspopup','dialog');
  const title=document.createElement('div');title.className='item-title';setNicknameTitle(title,item.name);card.append(title);
  visible.forEach(([k,v])=>{const row=document.createElement('div');row.className='item-row';const b=document.createElement('b');b.textContent=k;row.append(b,document.createTextNode(' : '+v));card.append(row);});
- const paws=document.createElement('span');paws.className='holding-paws';paws.setAttribute('aria-hidden','true');
- for(let i=0;i<2;i++){const paw=document.createElement('img');paw.src='holding-paw.svg';paw.alt='';paw.width=40;paw.height=33;paws.append(paw);}card.append(paws);
+ const paws=document.createElement('span');paws.className='card-pawprints';paws.setAttribute('aria-hidden','true');
+ for(let i=0;i<2;i++){const paw=document.createElement('img');paw.src='paw-icon.svg';paw.alt='';paw.width=20;paw.height=20;paws.append(paw);}card.append(paws);
 
  let opening=false;const open=async()=>{
   if(opening||dialog.open)return;opening=true;
